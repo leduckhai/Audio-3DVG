@@ -18,12 +18,12 @@ Install the necessary packages listed out in `requirements.txt`:
 pip install -r requirements.txt
 ```
 After all packages are properly installed, please run the following commands to compile the MinkowskiEngine and PointNet++:
-<!-- ```shell
+```shell
 git clone --recursive "https://github.com/NVIDIA/MinkowskiEngine"
 cd MinkowskiEngine
 git checkout 02fc608bea4c0549b0a7b00ca1bf15dee4a0b228
 python setup.py install --force_cuda --blas=openblas
-``` -->
+```
 ```shell
 cd model/external_tools/pointnet2
 python setup.py install
