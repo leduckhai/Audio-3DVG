@@ -44,13 +44,13 @@ Beside, we support the inference data by following steps:
 ### Inference
 You can change parameters in `config/InstanceRefer.yaml`:
 ```shell
-python scripts/inference.py --log_dir checkpoints
+python -m scripts/inference --log_dir checkpoints
 ```
 
 ### Visualization
 config the id appear in checkpoints/results
 ```shell
-python scripts/visualize.py --id 6226
+python -m scripts/visualize --id 6226
 ```
 
 ## TODO
