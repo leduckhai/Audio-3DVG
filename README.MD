@@ -48,7 +48,7 @@ python -m scripts/inference --log_dir checkpoints
 ```
 
 ### Visualization
-config the id appear in checkpoints/results
+config the id appear in checkpoints/results, instead of doing steps above, we provide a few examples in this folder and it can be visualised as: 
 ```shell
 python -m scripts/visualize --id 6226
 ```
