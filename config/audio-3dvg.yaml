@@ -1,0 +1,62 @@
+GENERAL:
+  manual_seed: 123
+
+DATA:
+  dataset: ScanRefer
+  num_points: 40000
+  num_scenes: -1
+  num_classes: 18
+  use_augment: True
+
+  # input
+  use_height: True
+  use_color: True
+  use_normal: False
+  use_multiview: False
+
+obj_encoder:
+  sa_n_points: [32, 16, null]
+  sa_n_samples: [32, 32, null]
+  sa_radii: [0.2, 0.4, null]
+  sa_mlps: [[3, 64, 64, 128], [128, 128, 128, 256], [256, 256, 512, 256]]
+  dropout: 0.1
+
+MODEL:
+  model: audio-3dvg
+
+  # Filtering candidates
+  use_gt_audio: True
+
+  # Audio Module
+  audio_module: audio_module
+
+  # Feature Module
+  feature_module: feature_module
+
+  # Attention Module
+  attention_module: attention_module
+
+  # pretrain
+  use_checkpoint: '/home/duccd/Desktop/audio-3dvg/checkpoints'
+  # use_checkpoint: False
+  use_pretrained: False
+
+TRAIN:
+  batch_size: 16
+  num_workers: 4
+  epoch: 25
+
+  lr: 0.0001
+  lr_decay_step: [5, 10, 15, 20]
+  lr_decay_rate: 0.5
+  bn_decay_step:
+  bn_decay_rate:
+  wd: 0.00001
+
+  verbose: 5
+  val_step: 2000
+  start_val: 0
+
+
+
+

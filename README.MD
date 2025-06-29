@@ -13,7 +13,7 @@ The code is tested on Ubuntu 20.04 LTS with **PyTorch 1.11 and CUDA 11.3** insta
 conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
 ```
 
-Install the necessary packages listed out in `requirements.txt`:
+Install the necessary packages listed out in `requirements.txt`, install related library if need:
 ```shell
 pip install -r requirements.txt
 ```
@@ -37,20 +37,20 @@ Beside, we support the inference data by following steps:
 
 1. Acces the link: https://huggingface.co/datasets/caodinhduc/audio-3dvg/tree/main
 2. Download the evaluation embeddings and place them in: data/contextual_val
-3. Download the PointGroup data and place it in: data/scannet/pointgroup_data_val 
+3. Download the PointGroup data and place it in: data/scannet/pointgroup_data
 4. Download the model checkpoint model.pth and place it in: checkpoint/model.pth 
 
 
 ### Inference
 You can change parameters in `config/InstanceRefer.yaml`:
 ```shell
-python scripts/inference.py --log_dir outputs
+python scripts/inference.py --log_dir checkpoints
 ```
 
 ### Visualization
-config the id
+config the id appear in checkpoints/results
 ```shell
-python scripts/visualize.py
+python scripts/visualize.py --id 6226
 ```
 
 ## TODO
