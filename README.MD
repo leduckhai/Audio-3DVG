@@ -3,7 +3,7 @@
 
 This repository is official implementation of the paper: Audio-3DVG: Unified Audio - Point Cloud Fusion for 3D Visual Grounding
 
-![](figures/architecture.png)
+![](figures/architecture.pdf)
 
 
 ## Setup
