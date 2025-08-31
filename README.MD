@@ -9,6 +9,21 @@ This repository is official implementation of the paper: Audio-3DVG: Unified Aud
 ![](figures/audio_guided_attention.png)
 <p align="center"><em>Audio-Guided Attention</em></p>
 
+* **Abstract:**
+3D Visual Grounding (3DVG) involves localizing target objects in 3D point clouds based on natural language. While prior work has made strides using textual descriptions, leveraging spoken language-known as Audio-based 3D Visual Grounding-remains underexplored and challenging. Motivated by advances in automatic speech recognition (ASR) and speech representation learning, we propose Audio-3DVG, a simple yet effective framework that integrates audio and spatial information for enhanced grounding. Rather than treating speech as a monolithic input, we decompose the task into two complementary components. First, we introduce (i) Object Mention Detection, a multi-label classification task that explicitly identifies which objects are referred to in the audio, enabling more structured audio-scene reasoning. Second, we propose an (ii) Audio-Guided Attention module that models the interactions between target candidates and mentioned objects, enhancing discrimination in cluttered 3D environments. To support benchmarking, we (iii) synthesize audio descriptions for standard 3DVG datasets, including ScanRefer, Sr3D, and Nr3D. Experimental results demonstrate that Audio-3DVG not only achieves new state-of-the-art performance in audio-based grounding, but also competes with text-based methods, highlight the promise of integrating spoken language into 3D vision tasks.
+
+* **Citation:**
+Please cite this paper: [https://arxiv.org/abs/2507.00669](https://arxiv.org/abs/2507.00669)
+
+``` bibtex
+@misc{Audio-3DVG,
+      title={Audio-3DVG: Unified Audio -- Point Cloud Fusion for 3D Visual Grounding}, 
+      author={Duc Cao-Dinh and Khai Le-Duc and Anh Dao and Bach Phan Tat and Chris Ngo and Duy M. H. Nguyen and Nguyen X. Khanh and Thanh Nguyen-Tang},
+      year={2025},
+      eprint={2507.00669},
+      url={https://arxiv.org/abs/2507.00669},
+}
+```
 
 ## Setup
 The code is tested on Ubuntu 20.04 LTS with **PyTorch 1.11 and CUDA 11.3** installed. 
