@@ -4,7 +4,10 @@
 This repository is official implementation of the paper: Audio-3DVG: Unified Audio - Point Cloud Fusion for 3D Visual Grounding
 
 ![](figures/architecture.png)
+<p align="center"><em>Main pipeline</em></p>
+
 ![](figures/audio_guided_attention.png)
+<p align="center"><em>Audio-Guided Attention</em></p>
 
 
 ## Setup
