@@ -1,5 +1,12 @@
-# Audio-3DVG
-### Audio-3DVG: Unified Audio - Point Cloud Fusion for 3D Visual Grounding
+# Audio-3DVG: Unified Audio - Point Cloud Fusion for 3D Visual Grounding
+
+**<div align="center">Preprint</div>**
+
+<div align="center"><b>Duc Cao-Dinh*</b>, <b>Khai Le-Duc*</b>, Anh Dao, Bach Phan Tat, Chris Ngo, Duy M. H. Nguyen, Nguyen X. Khanh, Thanh Nguyen-Tang</div>
+
+<div align="center">*Equal contribution</div>
+
+> Please press ⭐ button and/or cite papers if you feel helpful.
 
 This repository is official implementation of the paper: Audio-3DVG: Unified Audio - Point Cloud Fusion for 3D Visual Grounding
 
